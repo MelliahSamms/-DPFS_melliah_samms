@@ -1,0 +1,127 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "producto": "Juego de Sala",
+      "descripcion": "Referencia: LZ706S",
+      "precio": "$349.99",
+      "imagen": "/imagen/sala.png"
+    },
+    {
+      "id": 2,
+      "producto": "Armario 4 Puertas",
+      "descripcion": "Referencia: BE12-138",
+      "precio": "$149.99",
+      "imagen": "/imagen/armario.png"
+    },
+    {
+      "id": 3,
+      "producto": "Butaca",
+      "descripcion": "Calidad premium",
+      "precio": "$100.00",
+      "imagen": "/imagen/255-removebg-preview.png"
+    },
+    {
+      "id": 4,
+      "producto": "Aparador",
+      "descripcion": "SKU: 5023019",
+      "precio": "$250.00",
+      "imagen": "/imagen/640-removebg-preview.png"
+    },
+    {
+      "id": 5,
+      "producto": "Mesa de noche",
+      "descripcion": "SKU 93996000007",
+      "precio": "$149.00",
+      "imagen": "/imagen/Mesuys.png"
+    },
+    {
+      "id": 6,
+      "producto": "Silla",
+      "descripcion": "SKU 85819500007",
+      "precio": "$84.00",
+      "imagen": "/imagen/2.png"
+    },
+    {
+      "id": 7,
+      "producto": "CAMA FULL 1.37X1.9M",
+      "descripcion": "Referencia: 04001834",
+      "precio": "$285.00",
+      "imagen": "/imagen/cama.png"
+    },
+    {
+      "id": 8,
+      "producto": "Silla Reclinable",
+      "descripcion": "Referencia: 7003960",
+      "precio": "$299.00",
+      "imagen": "/imagen/4.png"
+    },
+    {
+      "id": 9,
+      "producto": "Buffet Denver",
+      "descripcion": "SKU 95569500007",
+      "precio": "$179.00",
+      "imagen": "/imagen/tyi.png"
+    },
+    {
+      "id": 10,
+      "producto": "Silla Ejecutiva",
+      "descripcion": "Ref: ACA539M",
+      "precio": "$159.99",
+      "imagen": "/imagen/6.png"
+    }
+  ],
+  "promociones": [
+    {
+      "id": 1,
+      "nombre": "Silla",
+      "descripcion": "SKU 85819500034",
+      "imagen": "/imagen/pr4.png",
+      "precio_original": 100.00,
+      "precio_descuento": 80.00
+    },
+    {
+      "id": 2,
+      "nombre": "Mesa de noche",
+      "descripcion": "SKU 93996000007",
+      "imagen": "/imagen/Mesuys.png",
+      "precio_original": 149.00,
+      "precio_descuento": 100.00
+    },
+    {
+      "id": 3,
+      "nombre": "Mueble Cocina",
+      "descripcion": "Set de Cocina Studio",
+      "imagen": "/imagen/covins.png",
+      "precio_original": 115.00,
+      "precio_descuento": 90.00
+    },
+    {
+      "id": 4,
+      "nombre": "Nevera Inoxidable",
+      "descripcion": "Referencia: RMP435FZNU",
+      "imagen": "/imagen/FH-removebg-preview.png",
+      "precio_original": 639.99,
+      "precio_descuento": 549.99
+    },
+    {
+      "id": 5,
+      "nombre": "Lavadora Automática",
+      "descripcion": "Referencia: LMA74215WBAB1",
+      "imagen": "/imagen/lavad.png",
+      "precio_original": 599.99,
+      "precio_descuento": 499.99
+    },
+    {
+      "id": 6,
+      "nombre": "Estufa A Gas",
+      "descripcion": "Descripción de la promoción 6.",
+      "imagen": "/imagen/estufa.png",
+      "precio_original": 399.99,
+      "precio_descuento": 299.99
+    }
+  ]
+}
+
+
+  

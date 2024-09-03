@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="/css/productDetail.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <img src="/imagen/Logo-removebg-preview (1).png" alt="logo" width="200" height="100" class="logo">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-icono">
+                <img src="/imagen/menu.png" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Servicios</a></li>
+                    <li><a href="/html/pagina.html">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="login">
+                    <a href="/html/iniciarSeccion.html">
+                    <img src="/imagen/fr.png" alt="Imagen de login">
+                </a>
+                </div>
+            </nav>
+            <div class="submenu">
+                <img src="/imagen/car.svg" id="img-carrito" alt="carrito">
+                <div id="carrito">
+                    <h3>Carrito de Compras</h3>
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                    </table>
+                    <p id="total-carrito">Total: $0.00</p>
+                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                    <a href="/html/carrito.html" id="pagarCarrito" class="btn-2">Ir a pagar</a>
+                    <script>
+                        document.getElementById('pagarCarrito').addEventListener('click', function() {
+                            window.location.href = 'carrito.html';
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header-content container">
+            <div class="header-text">
+                <img src="/imagen/BANNER-DESKTOP_9_-removebg-preview.png" alt="" width="700" height="300">
+                <p>Estrena los mejores productos</p>
+            </div>
+            <div class="header-img">
+                <img src="/imagen/right.png" alt="">
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="oferts container" id="lista-1">
+        <h2>Destacado</h2>
+        <p>
+            La comodidad es esencial cuando se trata de muebles.
+        </p>
+
+        <div class="oferts-content"> 
+           
+            <div class="oferts-1">
+                <img src="/imagen/sala.png" alt="">
+                <div class="products-txt">
+                    <h3>Juego de Sala  </h3>
+                    <p>Referencia: LZ706S </p>
+                    <p class="precio">$349.99</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/armario.png" alt="">
+                <div class="products-txt">
+                    <h3>Armario 4 Puertas</h3>
+                    <p>Referencia: BE12-138</p>
+                    <p class="precio">$149.99</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar</a>
+                </div>
+            </div>
+
+            <div class="logan-1">
+                <h3>Define tu Estilo y Espacio</h3>
+                <p>
+                    Antes de comenzar la búsqueda, es crucial definir el estilo que deseas
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="oferts-content">
+            <div class="logan-1">
+                <h3>Ten en Cuenta la Comodidad</h3>
+                <p>
+                        Un buen diseño no solo se ve bien, sino que también se siente bien
+                </p>
+                
+            </div>
+            <div class="oferts-1">
+                <img src="/imagen/255-removebg-preview.png" alt="">
+                <div class="products-txt">
+                    <h3>Butaca</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$100.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/640-removebg-preview.png" alt="">
+                <div class="products-txt">
+                    <h3>Aparador</h3>
+                    <p>SKU: 5023019</p>
+                    <p class="precio">$250.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="promotion">
+
+        <div class="promotion-content container">
+          
+            <div class="promotion-txt">
+                <h2>Las mejores promociones</h2>
+                <p>
+    
+
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+
+            <div class="promotion-img">
+                <img src="/imagen/promociones-removebg-preview.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <main class="product container" id="lista-2">
+        <h2>Productos</h2>
+        <p>
+            Todo lo que buscas lo encuentras aqui. 
+
+        </p>
+        <div class="product-content">
+
+            <div class="oferts-1">
+                <img src="/imagen/Mesuys.png" alt="">
+                <div class="products-txt">
+                    <h3>Mesa de noche</h3>
+                    <p>SKU 93996000007</p>
+                    <p class="precio">$149.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/2.png" alt="">
+                <div class="products-txt">
+                    <h3>Silla</h3>
+                    <p>SKU 85819500007</p>
+                    <p class="precio">$84.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6" >Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/cama.png" alt="">
+                <div class="products-txt">
+                    <h3>CAMA FULL 1.37X1.9M</h3>
+                    <p>Referencia: 04001834</p>
+                    <p class="precio">$285.00 </p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7" >Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/4.png" alt="">
+                <div class="products-txt">
+                    <h3>Silla Reclinable</h3>
+                    <p>Referencia: 7003960</p>
+                    <p class="precio">$299.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8" >Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/tyi.png" alt="">
+                <div class="products-txt">
+                    <h3>Buffet Denver</h3>
+                    <p>SKU 95569500007</p>
+                    <p class="precio">$179.00</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9" >Agregar</a>
+                </div>
+            </div>
+
+            <div class="oferts-1">
+                <img src="/imagen/6.png" alt="">
+                <div class="products-txt">
+                    <h3>Silla Ejecutiva </h3>
+                    <p>Ref: ACA539M</p>
+                    <p class="precio">$159.99</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10" >Agregar</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="blog container" id="sobre-nosotros">
+
+        <h2>Sobre nosotros</h2>
+        
+        <div class="blog-content">
+
+            <div class="blog-1">
+                <img src="/imagen/b1.jpg" alt="">
+                <div class="blog-txt">
+                    <p>
+                        Nos especializamos en la creación de mobiliario a medida, donde cada pieza cuenta 
+                        una historia única en tu espacio. Con nuestra experiencia y pasión por el diseño, 
+                        transformamos tus sueños en realidad. Descubre la elegancia y funcionalidad en cada 
+                        rincón de tu hogar con nosotros.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="/imagen/b2.jpg" alt="">
+                <div class="blog-txt">
+                    <p>
+                        Somos una tienda departamental que brinda la mejor experiencia de compra online a
+                         todos sus clientes.
+                         Encontrarás en un solo sitio todo lo que necesitas para la familia y el hogar.
+                    </p>
+                    <p> Somos la cadena online por departamento con mayor variedad de productos.</p>
+                
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="/imagen/b3.jpg" alt="">
+                <div class="blog-txt">
+                    <p>
+                        Siempre pensando en el beneficio del cliente, nos encargamos de que encuentres 
+                        todo lo que necesitas en un solo lugar. 
+                        Elige tu producto y puedes pagar con tu método de pago favorito. Además,te gestionamos 
+                        los envíos para que recibas tu pedido de forma rápida y segura.
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer container">
+
+        <div class="link">
+            <h3>SERVICIO DE ATENCION AL CLIENTE</h3>
+            <ul>
+                <li><a href="lorem">Teléfonos Oficina Principal: (123) 456-7890</a></li>
+                <li><a href="lorem">Email: contacto@tienda.com</a></li>
+                <li><a href="lorem">Dirección:
+                    Centro Comercial Costa Sur, Ciudad Radial</a></li>
+            </ul>
+        </div>
+       
+    
+    </footer>
+
+    <section class="redes-sociales" id="contacto">
+        <h3>Síguenos</h3>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="/imagen/facebook.png" alt="Facebook" width="40" height="40">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="/imagen/twiter.png" alt="Twitter" width="40" height="40">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="/imagen/ig.png" alt="Instagram" width="40" height="40">
+          </a>
+          
+    </section>
+
+    <div class="footer-bottom">
+        <p class="foot">&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p> 
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

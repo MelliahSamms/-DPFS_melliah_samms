@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/css/pagina.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda de Muebles</h1>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/muebles">Muebles</a>
+            <a href="/carrito">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Carrito de Compras</h2>
+
+        <section class="cart-items">
+            <% cartItems.forEach(item => { %>
+                <div class="cart-item">
+                    <img src="<%= item.image %>" alt="<%= item.name %>">
+                    <h3><%= item.name %></h3>
+                    <p>Precio: $<%= item.price %></p>
+                    <button data-id="<%= item.id %>" class="remove-from-cart">Eliminar</button>
+                </div>
+            <% }) %>
+        </section>
+
+        <section class="cart-summary">
+            <h3>Total: $<%= total %></h3>
+            <button id="checkout">Proceder al Pago</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Muebles</p>
+    </footer>
+
+    <script src="/pagina.js"></script>
+</body>
+</html>

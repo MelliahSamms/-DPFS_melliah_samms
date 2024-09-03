@@ -1,0 +1,275 @@
+/* styles.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+/* Estilo para el contenedor del login */
+.login {
+    text-align: right; /* Alinea la imagen al lado derecho del contenedor */
+    padding: 20px; /* Opcional: Añade padding para darle espacio al contenedor */
+}
+
+/* Estilo para la imagen dentro del contenedor de login */
+.login img {
+    width: 50px; /* Tamaño más pequeño para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Opcional: Sombra para resaltar la imagen */
+}
+
+
+/* Estilos para el carrito */
+/* Estilos para el carrito */
+.cart-section {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.submenu {
+    position: absolute; 
+    top: 80px; 
+    right: 20px;
+    z-index: 1000; 
+}
+
+#carrito {
+    display: none; 
+    background-color: rgba(78, 75, 80, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px; 
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+}
+
+.submenu:hover #carrito {
+    display: block; 
+}
+
+#img-carrito {
+    cursor: pointer;
+    width: 40px; 
+    height: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: #ffffff;
+}
+
+
+.carrito-info {
+  
+    padding: 20px; /* Espaciado interno */
+  
+    border-radius: 10px; /* Bordes redondeados opcional */
+    margin: 10px 0; /* Espaciado superior e inferior opcional */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+.carrito-info p {
+    margin-bottom: 20px; /* Espaciado inferior del párrafo */
+    font-size: 1.2em; /* Tamaño de fuente más grande para el total */
+    color: #333; /* Color de texto */
+}
+
+.carrito-info .btn {
+    display: inline-block; /* Asegura que los botones se muestren en línea */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    border: 2px solid white;
+    color: white; /* Color del texto en los botones */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 5px; /* Bordes redondeados de los botones */
+    margin: 5px; /* Espaciado entre los botones */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alinea el texto en el centro */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+
+
+/* Sección de Categorías */
+.categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 120px; /* Ajusta el tamaño del círculo */
+    height: 120px; /* Ajusta el tamaño del círculo */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.category img {
+    width: 80px; /* Ajusta el tamaño de la imagen dentro del círculo */
+    height: 80px; /* Ajusta el tamaño de la imagen dentro del círculo */
+    border-radius: 50%;
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+}
+
+.category h3 {
+    margin-top: 10px;
+    font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
+}
+
+.category a {
+    display: inline-block;
+    
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px; /* Ajusta el tamaño del texto si es necesario */
+}
+
+.category a:hover {
+    transform: scale(1.1); /* Agranda el círculo al pasar el mouse */
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: darkorange;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .cta-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Contenedores de producto, oferta y testimonio */
+.product, .offer, .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px; /* Espacio debajo de cada cuadro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.product-list, .offer-list, .testimonial-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para las imágenes dentro de los productos, ofertas y testimonios */
+.product img, .offer img, .testimonial img {
+    width: 200px; /* Tamaño fijo para las imágenes */
+    height: 150px; /* Tamaño fijo para las imágenes */
+    object-fit: cover; /* Recorta la imagen para ajustar el tamaño sin distorsionar */
+    border-radius: 10px; /* Asegura que las imágenes tengan bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    border: 1px solid #ddd; /* Opcional: Puedes agregar un borde para resaltar las imágenes */
+    box-shadow: 0 0 5px rgba(196, 80, 13, 0.1); /* Opcional: Agrega una sombra a la imagen */
+}
+
+/* Efecto hover para los contenedores */
+.product:hover, .offer:hover, .testimonial:hover {
+    transform: translateY(-10px); /* Eleva el contenedor al pasar el mouse */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Aumenta la sombra para resaltar */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info, footer .social-media, footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 768px) {
+    .product, .offer, .testimonial {
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product, .offer, .testimonial {
+        width: calc(100% - 20px); /* Un producto por fila en pantallas muy pequeñas */
+    }
+}

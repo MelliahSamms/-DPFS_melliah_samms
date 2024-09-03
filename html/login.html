@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form id="registrationForm" class="form-register" action="/users/register" method="POST" enctype="multipart/form-data" onsubmit="return validar();">
+        <h4>Formulario de Registro</h4>
+        
+        <!-- Vista previa de la Imagen de Perfil -->
+        <div class="image-preview" onclick="document.getElementById('profileImage').click();">
+            <img id="profileImagePreview" src="/imagen/default-profile.png" alt="Vista previa de la imagen">
+        </div>
+        
+        <!-- Campo de Imagen de Perfil (oculto) -->
+        <input type="file" name="profileImage" id="profileImage" accept="image/*" style="display: none;" onchange="previewImage(event)">
+        
+        <!-- Otros Campos -->
+        <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+        <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+        
+        <p>
+            <input type="checkbox" id="terms" name="terms" required> Acepto los <a href="#">Términos y condiciones</a>
+        </p>
+        
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="/html/iniciarSeccion.html">¿Ya tienes una cuenta?</a></p>
+        <script src="/login.js"></script>
+    </form>
+</body>
+</html>
+

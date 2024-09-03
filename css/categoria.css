@@ -1,0 +1,266 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.cart-section {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.submenu {
+    position: absolute; 
+    top: 80px; 
+    right: 20px;
+    z-index: 1000; 
+}
+
+#carrito {
+    display: none;
+    background-color: rgba(78, 75, 80, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: absolute;
+    top: 170%; /* Mueve el carrito más abajo cambiando este valor */
+    right: 0;
+}
+
+.submenu:hover #carrito {
+    display: block;
+}
+
+#img-carrito {
+    cursor: pointer;
+    width: 30px; /* Tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin: 25px auto 0 auto; /* Ajusta el margen superior a 20px */
+    transition: transform 0.3s ease;
+}
+
+#img-carrito:hover {
+    transform: scale(1.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: #ffffff;
+}
+
+.eliminar-producto {
+    background-color: #ff3c2a;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn-2 {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.categoriaa {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.categoriaa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categoryi-list {
+    display: flex;
+    gap: 20px; /* Espacio entre los círculos */
+    flex-wrap: nowrap; /* Evita que los círculos se muevan a la siguiente línea */
+    justify-content: center; /* Centra los círculos en la fila */
+  
+}
+
+.categoryi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 10px;
+    border-radius: 50%;
+    width: 120px; /* Tamaño del círculo */
+    height: 120px; /* Tamaño del círculo */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Agrega transición para el efecto de movimiento */
+}
+
+.categoryi:hover {
+    transform: scale(1.1); /* Agranda el círculo al pasar el mouse */
+}
+
+.categoryi img {
+    width: 80px; /* Tamaño de la imagen dentro del círculo */
+    height: 80px; /* Tamaño de la imagen dentro del círculo */
+    border-radius: 50%;
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+}
+
+.categoryi h3 {
+    margin-top: 10px;
+    font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
+}
+
+
+.category a {
+    display: inline-block;
+    background-color:  #ffffff;
+    color: #ff3c2a;
+    border: 2px solid #ff3c2a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px; /* Ajusta el tamaño del texto si es necesario */
+}
+
+.category a:hover {
+    background-color: #ff3c2a;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ff3c2a;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .cta-button {
+    color: #ffffff;
+    background-color: #ff3c2a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ff3c2a;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.categories {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: calc(30% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Agranda ligeramente la caja */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Añade una sombra más intensa */
+}
+
+
+.product img {
+    width: 200px; /* Reducido a 150px de ancho */
+    height: 200px; /* Reducido a 150px de alto */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 20px; /* Tamaño de fuente reducido */
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 20px; /* Tamaño de fuente reducido */
+    font-weight: bold;
+    color: #ff3c2a;
+}
+/* Estilo del contenedor del botón */
+.button-container {
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el botón dentro del contenedor */
+    display: inline-block; /* Ajustar el tamaño al contenido */
+}
+
+.button-container a {
+    color: #ff3c2a; /* Color del texto del botón */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.button-container a:hover {
+    color: white; /* Cambiar color de texto al pasar el mouse */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

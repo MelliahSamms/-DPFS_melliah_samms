@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+    
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4e4b5076;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Estilo para el título principal */
+header h1 {
+    font-size: 2em;
+}
+
+/* Estilo para la lista del menú 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}*/
+
+
+
+.submenu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    min-width: 200px;
+    
+}
+
+#img-carrito {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* Estilo para el carrito desplegable */
+.carrito-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 40px; /* Ajusta este valor según sea necesario */
+    background-color: #4e4b5076; /* Fondo semitransparente */
+    border: none; /* Sin color de borde */
+    border-radius: 0px; /* Borde cuadrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 300px;
+    z-index: 10;
+}
+
+.submenu:hover .carrito-container {
+    display: block;
+}
+
+
+/* Estilo para la tabla del carrito */
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-carrito th, .tabla-carrito td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el encabezado de la tabla */
+.tabla-carrito th {
+    background-color: #4e4b5000;
+    font-weight: bold;
+    border: none; /* Quita el borde de los encabezados */
+}
+
+.tabla-carrito td {
+    border: none; /* Quita el borde de las celdas */
+}
+
+/* Estilo para el total del carrito */
+#total-carrito {
+    font-size: 18px;
+    text-align:right;
+    margin-top: 10px;
+    color: #080808;
+}
+
+
+.btn-vaciar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-vaciar:hover {
+    background-color: transparent;
+    border-color: white; 
+}
+
+
+
+th, td {
+    color: #ffffff;
+}
+
+
+/* Contenedor de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center; 
+    background-color: #f8f8f8; 
+}
+
+/* Lista de navegación */
+.navbar ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+/* Elementos de la lista */
+.navbar ul li {
+    position: relative;
+}
+
+/* Enlaces de navegación */
+.navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+    text-decoration: none; 
+}
+
+/* Efecto hover para los enlaces */
+.navbar ul li a:hover {
+    color: #ff3c2a;
+}
+
+
+/* Estilo para la sección de promociones */
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 80px;
+    margin-top: 50px; /* Añade un margen superior para bajar la sección */
+}
+
+
+/* Estilo para las tarjetas de promoción */
+.promotion-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.promotion-card img {
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+
+.promotion-card:hover {
+    transform: scale(1.05);
+}
+
+.promotion-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.promotion-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.promotion-card p {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.redes-sociales {
+    text-align: center; /* Centra horizontalmente los elementos en línea */
+    margin-top: 20px;   /* Agrega espacio superior */
+    
+    background-color: #4e4b5076;
+  }
+
+  .redes-sociales a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+  }
+
+.foot {
+    text-align: center;
+    background-color: #4e4b5076;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .promotions {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .promotion-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .submenu {
+        padding: 10px;
+    }
+}
+
+
+

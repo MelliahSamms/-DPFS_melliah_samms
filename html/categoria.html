@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles por Categoría</title>
+    <link rel="stylesheet" href="/css/categoria.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">DYAMA MUEBLERIA</div>
+        <nav>
+            <ul>
+                <li><a href="/html/pagina.html">Inicio</a></li>
+                <li><a href="/html/promociones.html">Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="submenu">
+        <img src="/imagen/car.svg" id="img-carrito" alt="carrito">
+        <div id="carrito">
+            <h3>Carrito de Compras</h3>
+            <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+            <p id="total-carrito">Total: $0.00</p>
+            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+            <a href="/html/carrito.html" id="pagarCarrito" class="btn-2">Ir a pagar</a>
+        </div>
+    </div>
+    
+    
+
+    <!-- Sección de categorías -->
+    <section class="categories">
+        <h1>Catálogo de Muebles</h1>
+
+        <section class="categoriaa">
+            <h2>Selecciona tu Categoría</h2>
+            <div class="categoryi-list">
+                <!-- Categoría 1 -->
+                <div class="categoryi" onclick="scrollToSection('sala')">
+                    <img src="/imagen/salas.jpg" alt="Categoría 1">
+                    <h3>Sala</h3>
+                    
+                </div>
+                <!-- Categoría 2 -->
+                <div class="categoryi" onclick="scrollToSection('comedor')">
+                    <img src="/imagen/sillas.jpg" alt="Categoría 2">
+                    <h3>Comedor</h3>
+                   
+                </div>
+                <div class="categoryi" onclick="scrollToSection('dormitorio')">
+                    <img src="/imagen/dormitorios-2t-t.jpg" alt="Categoría 3">
+                    <h3>Dormitorio</h3>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="category-list">
+            <!-- Categoría 1 -->
+            <div class="category">
+                <section id="sala" class="hero">
+                    <img src="/imagen/salas-removebg-preview.png" alt="Imagen Principal">
+                    <div class="hero-text">  
+                        <div class="hero-text">  
+                            <h1>Sala</h1>
+                    </div>
+                </section>
+                <div class="product-list">
+                    <!-- Producto 1 -->
+                    <div class="product">
+                        <img src="/imagen/Sala-Valentina-min-removebg-preview.png" alt="Producto 1">
+                        <h3>Juego de Sala</h3>
+                        <p class="price">$349.99</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="/imagen/mesita.png" alt="Producto 2">
+                        <h3>Mesita de centro</h3>
+                        <p class="price">$148.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product">
+                        <img src="/imagen/SILLON-ACUARIO-min-removebg-preview.png" alt="Producto 2">
+                        <h3>Sillón tipo L</h3>
+                        <p class="price">$150.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría 2 -->
+            <div class="category">
+                <section id="comedor"class="hero">
+                    <img src="/imagen/344.png" alt="Imagen Principal">
+                    <div class="hero-text">  
+                        <h1>Comedor</h1>
+                    </div>
+                </section>
+                <div class="product-list">
+                    <!-- Producto 1 -->
+                    <div class="product">
+                        <img src="/imagen/8pue.png" alt="Producto 1">
+                        <h3>Comedor 6 Ptos</h3>
+                        <p class="price">$200.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product">
+                        <img src="/imagen/40.png" alt="Producto 2">
+                        <h3>Comedor 4 Ptos</h3>
+                        <p class="price">$180.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/imagen/mz.png" alt="Producto 2">
+                        <h3>Comedor de madera</h3>
+                        <p class="price">$100.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría 3 -->
+            <div class="category">
+                <section id="dormitorio" class="hero">
+                    <img src="/imagen/dorm portada.png" alt="Imagen Principal">
+                    <div class="hero-text">  
+                        <div class="hero-text">  
+                            <h1>Dormitorio</h1>
+                    </div>
+                </section>
+                <div class="product-list">
+                    <!-- Producto 1 -->
+                    <div class="product">
+                        <img src="/imagen/camafot.png" alt="Producto 1">
+                        <h3>Cama King Size</h3>
+                        <p class="price">$500.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product">
+                        <img src="/imagen/dor1.png" alt="Producto 2">
+                        <h3>Comoda de Madera</h3>
+                        <p class="price">$89.00</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/imagen/colchomm.png" alt="Producto 1">
+                        <h3>Colchon semi-ortopedico</h3>
+                        <p class="price">$159.99</p>
+                        <div class="button-container">
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="contact-info" id="contacto">
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: contacto@tienda.com</p>
+        </div>
+        <section class="redes-sociales" id="contacto">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="/imagen/facebook.png" alt="Facebook" width="40" height="40">
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="/imagen/twiter.png" alt="Twitter" width="40" height="40">
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="/imagen/ig.png" alt="Instagram" width="40" height="40">
+              </a>
+              
+        </section>
+        <div class="footer-links">
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+        </div>
+    </footer>
+    <script src="/categoria.js"></script>
+</body>
+</html>
